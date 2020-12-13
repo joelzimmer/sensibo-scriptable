@@ -1,0 +1,23 @@
+{
+  "name": "sensibo-scriptable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sensibo.js",
+  "scripts": {
+    "debug": "node sensibo.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelzimmer/sensibo-scriptable.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joelzimmer/sensibo-scriptable/issues"
+  },
+  "homepage": "https://github.com/joelzimmer/sensibo-scriptable#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
