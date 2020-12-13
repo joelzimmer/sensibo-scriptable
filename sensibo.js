@@ -1,6 +1,6 @@
 const fetch = require("node-fetch");
 
-const API_KEY = "";
+const API_KEY = process.env.API_KEY;
 const BASE_PATH = "https://home.sensibo.com/api/v2";
 
 const URLS = {
@@ -38,14 +38,3 @@ const getSensiboData = async () => {
 };
 
 getSensiboData();
-
-// const getDevices = async () => {
-//     const response = await fetch(`${BASE_PATH}/users/me/pods?apiKey=${API_KEY}`);
-//     const json = await response.json();
-
-//     return json;
-// }
-
-// const devices = getDevices();
-
-// console.log({ devices });
