@@ -66,7 +66,7 @@ async function run() {
       const farenheit = (temperature * 9/5) + 32;
       const farenheitRounded = Math.round(farenheit * 10) / 10;
 
-      const temperatureContent = temperatureStack.addText(`${farenheitRounded}ºF`);
+      const temperatureContent = temperatureStack.addText(`${farenheitRounded}º`);
       temperatureContent.textColor = textColor;
       temperatureContent.font = Font.semiboldSystemFont(20);
 
