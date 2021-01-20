@@ -38,7 +38,7 @@ const getSensiboData = async () => {
 
 async function run() {
   const listWidget = new ListWidget();
-  listWidget.setPadding(10, 10, 10, 10);
+  listWidget.setPadding(20, 10, 10, 10);
 
   try {
     const sensiboData = await getSensiboData();
@@ -68,13 +68,13 @@ async function run() {
 
       const temperatureContent = temperatureStack.addText(`${farenheitRounded}ºF`);
       temperatureContent.textColor = textColor;
-      temperatureContent.font = Font.semiboldSystemFont(20);
+      temperatureContent.font = Font.semiboldMonospacedSystemFont(20);
 
       temperatureStack.addSpacer(null);
       
       const humidityContent = temperatureStack.addText(`${humidity}%`);
       humidityContent.textColor = textColor;
-      humidityContent.font = Font.semiboldSystemFont(20);
+      humidityContent.font = Font.semiboldMonospacedSystemFont(20);
 
       listWidget.addSpacer(10);
 
